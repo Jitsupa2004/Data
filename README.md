@@ -1,77 +1,73 @@
 # Data
 
 ## Keyword
+
 **Data**
 
 ---
 
 ## Definition
 
-### English (Source 1 – Merriam-Webster)
-> "Data is factual information (such as measurements or statistics) used as a basis for reasoning, discussion, or calculation. In computing, data refers to information in digital form that can be transmitted or processed."
+### English (Source 1 — IBM)
+> "Data is information that has been translated into a form that is efficient for movement or processing. Relative to today's computers and transmission media, data is information converted into binary digital form."
 
-### English (Source 2 – IBM)
-> "Data is information that has been translated into a form that is efficient for movement or processing. Relative to today's computers and transmission media, data is information converted into binary digital form. Raw data is a term used to describe data in its most basic digital format."
+### English (Source 2 — Merriam-Webster)
+> "Data is factual information (such as measurements or statistics) used as a basis for reasoning, discussion, or calculation."
 
 ### Thai (สรุปในแบบของตัวเอง)
-Data หรือ "ข้อมูล" คือทุกสิ่งที่สามารถบันทึก วัด หรือสังเกตได้ และนำไปใช้ประโยชน์ต่อได้ — ถ้าไม่มี Data ก็เหมือนตัดสินใจโดยปิดตา 🙈
+
+Data คือข้อมูลดิบที่ยังไม่ผ่านการประมวลผล — เหมือนวัตถุดิบในครัว ถ้าแค่เก็บไว้เฉยๆ ก็ไม่มีประโยชน์ แต่เมื่อนำมาวิเคราะห์และประมวลผลแล้วจะกลายเป็น Information ที่มีคุณค่า 📊
 
 ---
 
 ## Explanation (ขยายความ)
 
 ### Data คืออะไร?
-Data คือข้อมูลดิบที่ยังไม่ผ่านการประมวลผล เช่น ตัวเลข ข้อความ รูปภาพ เสียง หรือสัญญาณต่าง ๆ เมื่อนำ Data มาประมวลผลและวิเคราะห์แล้ว จะกลายเป็น **Information** ที่มีความหมายและนำไปตัดสินใจได้
 
-### 🔄 ลำดับชั้นของข้อมูล (Data Hierarchy)
+Data คือข้อเท็จจริงที่ถูกบันทึกไว้ในรูปแบบต่างๆ ไม่ว่าจะเป็นตัวเลข ข้อความ รูปภาพ หรือเสียง ซึ่งเมื่อนำมาประมวลผลจะกลายเป็นสารสนเทศ (Information) ที่ใช้ตัดสินใจได้
+
+### 📂 ประเภทของ Data
+
+| ประเภท | ลักษณะ | ตัวอย่าง |
+|---|---|---|
+| **Structured** | มีโครงสร้างชัดเจน | ตาราง Database, Excel |
+| **Unstructured** | ไม่มีโครงสร้างตายตัว | รูปภาพ, วิดีโอ, Email |
+| **Semi-structured** | โครงสร้างบางส่วน | JSON, XML |
+
+### 🔄 Data Pipeline
 
 ```
-Data (ข้อมูลดิบ)
-    ↓ ประมวลผล
-Information (สารสนเทศ)
-    ↓ วิเคราะห์
-Knowledge (ความรู้)
-    ↓ นำไปใช้
-Wisdom (ปัญญา)
+Raw Data → Collection → Storage → Processing → Analysis → Insights
 ```
 
-### 📊 ประเภทของ Data
+### 💾 การจัดเก็บ Data
 
-| ประเภท | คำอธิบาย | ตัวอย่าง |
-|--------|---------|---------|
-| **Structured Data** | มีโครงสร้างชัดเจน | ตาราง Excel, ฐานข้อมูล SQL |
-| **Unstructured Data** | ไม่มีโครงสร้างตายตัว | รูปภาพ, วิดีโอ, ข้อความอิสระ |
-| **Semi-structured** | มีโครงสร้างบางส่วน | JSON, XML |
+| ประเภท | เหมาะกับ |
+|---|---|
+| **Relational DB** | ข้อมูล Structured เช่น MySQL, PostgreSQL |
+| **NoSQL DB** | ข้อมูล Unstructured เช่น MongoDB |
+| **Data Warehouse** | เก็บข้อมูลขนาดใหญ่สำหรับวิเคราะห์ |
+| **Data Lake** | เก็บข้อมูลดิบทุกรูปแบบ |
 
-### 🌍 ทำไม Data ถึงสำคัญในยุคนี้?
-- **Big Data** — ปัจจุบันโลกสร้างข้อมูลมากกว่า 2.5 quintillion bytes ต่อวัน
-- **Data-Driven Decision** — บริษัทใหญ่ ๆ ใช้ข้อมูลในการตัดสินใจทางธุรกิจ
-- **AI & Machine Learning** — ต้องใช้ Data จำนวนมากในการเรียนรู้
-- **Personalization** — Netflix, Spotify แนะนำเนื้อหาจากข้อมูลพฤติกรรมของเรา
+### 📊 ความสำคัญของ Data ในยุคปัจจุบัน
 
-### วงจรชีวิตของ Data
-1. **Collection** — เก็บรวบรวมข้อมูล
-2. **Storage** — จัดเก็บในฐานข้อมูล
-3. **Processing** — ประมวลผลและทำความสะอาด
-4. **Analysis** — วิเคราะห์หาความหมาย
-5. **Visualization** — แสดงผลเป็นกราฟหรือแดชบอร์ด
-6. **Action** — นำไปใช้ตัดสินใจ
+Data ถูกเรียกว่า "น้ำมันแห่งศตวรรษที่ 21" เพราะองค์กรที่สามารถเก็บรวบรวม วิเคราะห์ และใช้ประโยชน์จาก Data ได้ดีกว่า จะมีความได้เปรียบในการแข่งขันอย่างมาก
 
-> "Data is the new oil — but unlike oil, data becomes more valuable the more it is shared, analyzed, and combined with other data."
+> "Data คือทรัพยากรที่มีค่าที่สุดในยุคดิจิทัล การเข้าใจวิธีจัดเก็บ ประมวลผล และวิเคราะห์ Data อย่างถูกต้องเป็นทักษะที่ทุกองค์กรต้องการ"
 > — *ChatGPT (OpenAI)*
 
-> "ข้อมูลคือสินทรัพย์ที่มีค่าที่สุดในยุคดิจิทัล องค์กรที่สามารถเก็บ วิเคราะห์ และนำข้อมูลไปใช้ได้อย่างมีประสิทธิภาพ จะได้เปรียบทางการแข่งขันอย่างมีนัยสำคัญ"
+> "ในโลกที่ขับเคลื่อนด้วย Data การตัดสินใจโดยอาศัยข้อมูลจริง (Data-Driven Decision Making) แทนที่จะพึ่งแค่ประสบการณ์หรือความรู้สึก ทำให้องค์กรสามารถแข่งขันได้อย่างยั่งยืน"
 > — *Gemini (Google)*
 
 ---
 
 ## References
 
-1. Merriam-Webster – Data Definition – [https://www.merriam-webster.com/dictionary/data](https://www.merriam-webster.com/dictionary/data)
-2. IBM – What is Data – [https://www.ibm.com/topics/data](https://www.ibm.com/topics/data)
-3. ChatGPT (OpenAI) – [https://chat.openai.com](https://chat.openai.com)
-4. Gemini (Google) – [https://gemini.google.com](https://gemini.google.com)
+1. IBM — What is Data — <https://www.ibm.com/topics/data>
+2. Merriam-Webster — Data definition — <https://www.merriam-webster.com/dictionary/data>
+3. ChatGPT (OpenAI) — <https://chat.openai.com>
+4. Gemini (Google) — <https://gemini.google.com>
 
 ---
 
-*[← Back to Profile](https://jitsupa2004.github.io)*
+*[← Back to Profile](https://sximi.github.io)*
